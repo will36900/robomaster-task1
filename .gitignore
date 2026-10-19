@@ -1,0 +1,21 @@
+# ROS 2 / colcon generated output
+/build/
+/install/
+/log/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Compiled objects and local executables
+*.o
+/ros_2_cpp_node
+
+# Editor and OS temporary files
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

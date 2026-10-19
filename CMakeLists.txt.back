@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.8)
+project(ros2_cpp)
+
+# 将根目录下的 C++ 源文件编译成名为 ros_2_cpp_node 的可执行程序。
+# 教程中写的是 ros2_cpp_node.cpp；这里对应你的实际文件名 ros_2_cpp_node.cpp。
+add_executable(ros_2_cpp_node ros_2_cpp_node.cpp)
+
+# 查找 ROS 2 的 C++ 客户端库，并打印找到的头文件与库文件位置。
+find_package(rclcpp REQUIRED)
+message(STATUS ${rclcpp_INCLUDE_DIRS})
+message(STATUS ${rclcpp_LIBRARIES})
+
+# 告诉编译器去哪里找 rclcpp 头文件，并把程序与 rclcpp 库链接起来。
+target_include_directories(ros_2_cpp_node PUBLIC ${rclcpp_INCLUDE_DIRS})
+target_link_libraries(ros_2_cpp_node ${rclcpp_LIBRARIES})

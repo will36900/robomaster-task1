@@ -1,0 +1,9 @@
+{
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.configureSettings": {
+    "CMAKE_EXPORT_COMPILE_COMMANDS": true,
+    "CMAKE_PREFIX_PATH": "/opt/ros/lyrical"
+  },
+  "C_Cpp.default.configurationProvider": "",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
+}
