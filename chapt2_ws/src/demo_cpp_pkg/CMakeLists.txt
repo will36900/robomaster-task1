@@ -1,3 +1,10 @@
+# 每次新开终端，至少要重新执行：
+# cd ~/chp2/chapt2_ws
+# source /opt/ros/lyrical/setup.bash
+# source install/setup.bash
+
+
+
 cmake_minimum_required(VERSION 3.20)
 project(demo_cpp_pkg)
 
@@ -10,11 +17,15 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 
 add_executable(cpp_node src/cpp_node.cpp)
+add_executable(person_node src/person_node.cpp)
+add_executable(learn_auto src/learn_auto.cpp)
+add_executable(learn_shared_ptr src/learn_shared_ptr.cpp)
 target_link_libraries(cpp_node PRIVATE rclcpp::rclcpp)
+target_link_libraries(person_node PRIVATE rclcpp::rclcpp)
 
 # Install the node where `ros2 run` expects package executables.
 install(
-  TARGETS cpp_node
+  TARGETS cpp_node person_node learn_auto learn_shared_ptr
   DESTINATION lib/${PROJECT_NAME}
 )
 

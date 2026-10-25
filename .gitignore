@@ -1,7 +1,7 @@
 # ROS 2 / colcon generated output
-/build/
-/install/
-/log/
+build/
+install/
+log/
 
 # CMake generated files
 CMakeFiles/
@@ -11,6 +11,9 @@ compile_commands.json
 
 # Compiled objects and local executables
 *.o
+*.a
+*.so
+*.out
 /ros_2_cpp_node
 
 # Editor and OS temporary files

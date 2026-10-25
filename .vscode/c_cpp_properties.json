@@ -4,12 +4,12 @@
             "name": "Linux",
             "compilerPath": "/usr/bin/g++",
             "includePath": [
-                "${workspaceFolder}/**",
+                "${workspaceFolder}/chapt2_ws/src/**",
                 "/opt/ros/lyrical/include/rclcpp",
                 "/opt/ros/lyrical/include/**"
             ],
             "compileCommands": [
-                "${workspaceFolder}/build/compile_commands.json"
+                "${workspaceFolder}/chapt2_ws/build/demo_cpp_pkg/compile_commands.json"
             ],
             "cppStandard": "c++20",
             "intelliSenseMode": "linux-gcc-x64"

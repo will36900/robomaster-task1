@@ -1,9 +1,11 @@
 {
-  "cmake.buildDirectory": "${workspaceFolder}/build",
-  "cmake.configureSettings": {
-    "CMAKE_EXPORT_COMPILE_COMMANDS": true,
-    "CMAKE_PREFIX_PATH": "/opt/ros/lyrical"
-  },
   "C_Cpp.default.configurationProvider": "",
-  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/chapt2_ws/build/demo_cpp_pkg/compile_commands.json",
+  "cmake.sourceDirectory": "${workspaceFolder}/chapt2_ws/src/demo_cpp_pkg",
+  "cmake.buildDirectory": "${workspaceFolder}/chapt2_ws/build/demo_cpp_pkg",
+  "files.exclude": {
+    "**/build": false,
+    "**/install": false,
+    "**/log": true
+  }
 }
