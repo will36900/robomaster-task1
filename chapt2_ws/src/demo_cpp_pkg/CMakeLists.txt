@@ -1,6 +1,7 @@
 # 每次新开终端，至少要重新执行：
 # cd ~/chp2/chapt2_ws
 # source /opt/ros/lyrical/setup.bash
+# colcon build
 # source install/setup.bash
 
 
@@ -20,12 +21,14 @@ add_executable(cpp_node src/cpp_node.cpp)
 add_executable(person_node src/person_node.cpp)
 add_executable(learn_auto src/learn_auto.cpp)
 add_executable(learn_shared_ptr src/learn_shared_ptr.cpp)
+add_executable(learn_lambda src/learn_lambda.cpp)
+add_executable(learn_function src/learn_function.cpp)
 target_link_libraries(cpp_node PRIVATE rclcpp::rclcpp)
 target_link_libraries(person_node PRIVATE rclcpp::rclcpp)
 
 # Install the node where `ros2 run` expects package executables.
 install(
-  TARGETS cpp_node person_node learn_auto learn_shared_ptr
+  TARGETS cpp_node person_node learn_auto learn_shared_ptr learn_lambda learn_function
   DESTINATION lib/${PROJECT_NAME}
 )
 
