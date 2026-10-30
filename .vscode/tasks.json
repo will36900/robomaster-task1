@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "source /opt/ros/lyrical/setup.bash && colcon build --packages-select demo_cpp_pkg --cmake-args -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
             "options": {
-                "cwd": "${workspaceFolder}/chapt2_ws"
+                "cwd": "${workspaceFolder}/chap2/chapt2_ws"
             },
             "problemMatcher": [
                 "$gcc"
@@ -21,7 +21,7 @@
             "type": "shell",
             "command": "source /opt/ros/lyrical/setup.bash && source install/setup.bash && ros2 run demo_cpp_pkg '${fileBasenameNoExtension}'",
             "options": {
-                "cwd": "${workspaceFolder}/chapt2_ws"
+                "cwd": "${workspaceFolder}/chap2/chapt2_ws"
             },
             "dependsOn": "ROS 2: build demo_cpp_pkg",
             "problemMatcher": []

@@ -1,6 +1,5 @@
-<!--URDF 是结构说明文件，本身不会主动发布坐标变换。 -->
-
 <?xml version="1.0"?>
+<!-- URDF 是结构说明文件，本身不会主动发布坐标变换。 -->
 <robot name = "first_robot"> 
     <!-- the body of the robot -->
     <link name = "base_link">
@@ -33,7 +32,7 @@
         </visual>
     </link>
     <!-- 机器人的关节,用于组合机器人的部件 -->
-    <joint name = "base_to_imu" type = "fixed">#固定的关节
+    <joint name = "base_to_imu" type = "fixed"> <!-- 固定的关节 -->
     <parent link = "base_link"/>
     <child link = "imu_link"/>
     <origin xyz = "0 0 0.1" rpy = "0 0 0"/>

@@ -1,5 +1,5 @@
 # 每次新开终端，至少要重新执行：
-# cd ~/chp2/chapt2_ws
+# cd ~/robomaster-task1/chap2/chapt2_ws
 # source /opt/ros/lyrical/setup.bash
 # colcon build
 # source install/setup.bash
@@ -22,7 +22,7 @@ add_executable(person_node src/person_node.cpp)
 add_executable(learn_auto src/learn_auto.cpp)
 add_executable(learn_shared_ptr src/learn_shared_ptr.cpp)
 add_executable(learn_lambda src/learn_lambda.cpp)
-add_executable(learn_function src/learn_function.cpp)
+add_executable(learn_function src/learn_functional.cpp)
 target_link_libraries(cpp_node PRIVATE rclcpp::rclcpp)
 target_link_libraries(person_node PRIVATE rclcpp::rclcpp)
 

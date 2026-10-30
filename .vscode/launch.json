@@ -5,10 +5,10 @@
       "name": "ROS 2: 调试当前节点",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/chapt2_ws/install/demo_cpp_pkg/lib/demo_cpp_pkg/${fileBasenameNoExtension}",
+      "program": "${workspaceFolder}/chap2/chapt2_ws/install/demo_cpp_pkg/lib/demo_cpp_pkg/${fileBasenameNoExtension}",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}/chapt2_ws",
+      "cwd": "${workspaceFolder}/chap2/chapt2_ws",
       "environment": [
         {
           "name": "LD_LIBRARY_PATH",
@@ -16,7 +16,7 @@
         },
         {
           "name": "AMENT_PREFIX_PATH",
-          "value": "${workspaceFolder}/chapt2_ws/install/demo_cpp_pkg:/opt/ros/lyrical"
+          "value": "${workspaceFolder}/chap2/chapt2_ws/install/demo_cpp_pkg:/opt/ros/lyrical"
         }
       ],
       "externalConsole": false,
