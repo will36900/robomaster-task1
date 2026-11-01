@@ -24,7 +24,7 @@ robomaster-task1/
     └── task1/screenshots/      # 第一次任务的截图
 ```
 
-每个 `*_ws` 都是独立的 ROS 2 workspace。请在对应 workspace 目录中执行构建，例如：
+每个 `*_ws` 都是独立的 ROS 2 workspace。在对应 workspace 目录中执行构建，例如：
 
 ```bash
 cd chap6/chapt6_ws
